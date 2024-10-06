@@ -2,7 +2,10 @@
     <div class="navbar-inner-container">
       <div class="app-logo-container">
         <a [routerLink]="''">
-          <img [src]="appLogoSrc" />
+          <img [src]="appLogoSrc" 
+          (mouseenter)="onBrandLogoHover()"
+          (mouseleave)="onBrandLogoLeave()"
+          (click)="onBrandLogoClick()"/>
         </a>
       </div>
       <div class="motto-container">
@@ -11,25 +14,25 @@
       <div class="toolbox">
         <a [routerLink]="'PageNotFound'">
           <div class="tool">
-            <img src="../../../assets/navbar/navbar-car-icon-default.svg"/>
+            <img [src]="navbarIcons.hamburgerMenuIconsSrcs.carIconDefaultSrc"/>
             <span>Cars</span>
           </div>
         </a>
         <a [routerLink]="'PageNotFound'">
         <div class="tool">
-          <img src="../../../assets/navbar/navbar-parts-and-accessories-icon-default.svg"/>
+          <img [src]="navbarIcons.hamburgerMenuIconsSrcs.partsAndAccessoriesIconDefaultSrc"/>
           <span>Parts & Accessories</span>
         </div>
         </a>
         <a [routerLink]="'PageNotFound'">
         <div class="tool">
-          <img src="../../../assets/navbar/navbar-car-services-icon-default.svg"/>
+          <img [src]="navbarIcons.hamburgerMenuIconsSrcs.carServicesIconDefaultSrc"/>
           <span>Car Services</span>
         </div>
         </a>
         <a [routerLink]="'PageNotFound'">
         <div class="tool">
-          <img src="../../../assets/navbar/navbar-technical-data-icon-default.svg"/>
+          <img [src]="navbarIcons.hamburgerMenuIconsSrcs.technicalDataIconDefaultSrc"/>
           <span>Technical Data</span>
         </div>
       </a>
@@ -58,25 +61,25 @@
             </div>
             <a [routerLink]="'PageNotFound'">
             <div class="pair">
-              <img src="../../../assets/navbar/navbar-car-icon-default.svg"/>
+              <img [src]="navbarIcons.hamburgerMenuIconsSrcs.carIconDefaultSrc"/>
               <span>Cars</span>
             </div>
             </a>
             <a [routerLink]="'PageNotFound'">
             <div class="pair">
-              <img src="../../../assets/navbar/navbar-parts-and-accessories-icon-default.svg"/>
+              <img [src]="navbarIcons.hamburgerMenuIconsSrcs.partsAndAccessoriesIconDefaultSrc"/>
               <span>Parts & Accessories</span>
             </div>
             </a>
             <a [routerLink]="'PageNotFound'">
             <div class="pair">
-              <img src="../../../assets/navbar/navbar-car-services-icon-default.svg"/>
+              <img [src]="navbarIcons.hamburgerMenuIconsSrcs.carServicesIconDefaultSrc"/>
               <span>Car Services</span>
             </div>
             </a>
             <a [routerLink]="'PageNotFound'">
             <div class="pair">
-              <img src="../../../assets/navbar/navbar-technical-data-icon-default.svg"/>
+              <img [src]="navbarIcons.hamburgerMenuIconsSrcs.technicalDataIconDefaultSrc"/>
               <span>Technical Data</span>
             </div>
             </a>
@@ -87,25 +90,25 @@
             </div>
             <a [routerLink]="'PageNotFound'">
             <div class="pair">
-              <img src="../../../assets/navbar/navbar-messages-icon-0-default.svg"/>
+              <img [src]="navbarIcons.hamburgerMenuIconsSrcs.messagesIconDefaultSrc"/>
               <span>Messages</span>
             </div>
             </a>
             <a [routerLink]="'PageNotFound'">
             <div class="pair">
-              <img src="../../../assets/navbar/navbar-new-ad-icon-default.svg"/>
+              <img [src]="navbarIcons.hamburgerMenuIconsSrcs.mySearchesIconDefaultSrc"/>
               <span>My Searches</span>
             </div>
             </a>
             <a [routerLink]="'PageNotFound'">
             <div class="pair">
-              <img src="../../../assets/navbar/navbar-favorites-icon-default.svg"/>
+              <img [src]="navbarIcons.hamburgerMenuIconsSrcs.favoritesIconDefaultSrc"/>
               <span>Favorites</span>
             </div>
             </a>
             <a [routerLink]="'PageNotFound'">
             <div class="pair">
-              <img src="../../../assets/navbar/navbar-profile-icon-default.svg"/>
+              <img [src]="navbarIcons.hamburgerMenuIconsSrcs.userProfileIconDefaultSrc"/>
               <span>User Profile</span>
             </div>
             </a>
@@ -116,7 +119,7 @@
             </div>
             <a [routerLink]="'PageNotFound'">
             <div class="pair">
-              <img src="../../../assets/navbar/navbar-new-ad-icon-default.svg"/>
+              <img [src]="navbarIcons.hamburgerMenuIconsSrcs.newAdIconDefaultSrc"/>
               <span>New Ad</span>
             </div>
             </a>

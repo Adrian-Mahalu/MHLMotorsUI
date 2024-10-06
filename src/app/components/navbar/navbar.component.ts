@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { appLogoSrcs, hamburgerMenuOpenLogoSrcs, hamburgerMenuCloseLogoSrcs } from './navbar-constants';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { NavbarIcons } from './navbar-icons';
 
 @Component({
   selector: 'app-navbar',
@@ -13,10 +13,10 @@ import { RouterModule } from '@angular/router';
 export class NavbarComponent {
   isHamburgerMenuActive: boolean = false;
   showHamburgerMenuIcon: boolean = true;
-
-  appLogoSrc: string = appLogoSrcs.defaultSrc;
-  hamburgerMenuOpenLogoSrc: string = hamburgerMenuOpenLogoSrcs.defaultSrc;
-  hamburgerMenuCloseLogoSrc: string = hamburgerMenuCloseLogoSrcs.defaultSrc;
+  navbarIcons = NavbarIcons;
+  appLogoSrc: string = this.navbarIcons.appLogoSrcs.defaultSrc;
+  hamburgerMenuOpenLogoSrc: string = this.navbarIcons.hamburgerMenuOpenIconSrcs.defaultSrc;
+  hamburgerMenuCloseLogoSrc: string = this.navbarIcons.hamburgerMenuClosedIconSrcs.defaultSrc;
 
   toggleHamburgerMenu() {
     this.isHamburgerMenuActive = !this.isHamburgerMenuActive;
@@ -24,7 +24,19 @@ export class NavbarComponent {
   } 
   shouldDisplayHamburgerMenuIcon() {
     this.showHamburgerMenuIcon = !this.isHamburgerMenuActive;
-  } 
+  }
+  
+  onBrandLogoHover(){
+    this.appLogoSrc = this.navbarIcons.appLogoSrcs.hoveredSrc;
+  }
+
+  onBrandLogoLeave() {
+    this.appLogoSrc = this.navbarIcons.appLogoSrcs.defaultSrc;
+  }
+
+  onBrandLogoClick(){
+    this.appLogoSrc = this.navbarIcons.appLogoSrcs.activeSrc;
+  }
 }
 
 
