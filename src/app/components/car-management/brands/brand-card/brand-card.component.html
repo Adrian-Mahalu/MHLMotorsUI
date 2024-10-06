@@ -1,0 +1,41 @@
+<!-- <a routerLink="Models/{{brand.brandName}}">
+<div class="car-brand-card"
+            (mouseenter)="onBrandCardContainerHover(true)"
+            (mouseleave)="onBrandCardContainerHover(false)">
+        <div class="car-brand-logo-container">
+            <img id="brand-logo" [src]="brand.logoPath" />
+        </div>
+        <div class="car-brand-name-container">
+            <span class="car-brand-name-text">{{brand.brandName}}</span>
+        </div>
+    </div>
+</a> -->
+
+<!-- <a [routerLink]="'Models/' + brand.brandName">
+    <mat-card class="car-brand-card"
+      (mouseenter)="onBrandCardContainerHover(true)"
+      (mouseleave)="onBrandCardContainerHover(false)">
+      
+      <mat-card-header>
+        <div mat-card-avatar class="car-brand-logo-container">
+          <img id="brand-logo" [src]="brand.logoPath" alt="{{brand.brandName}} Logo"/>
+        </div>
+      </mat-card-header>
+  
+      <mat-card-content class="car-brand-name-container">
+        <span class="car-brand-name-text">{{brand.brandName}}</span>
+      </mat-card-content>
+  
+    </mat-card>
+  </a> -->
+
+  <a [routerLink]="'Models/' + brand.brandName">
+    <mat-card class="brand-card"
+    (mouseenter)="onBrandCardContainerHover(true)"
+    (mouseleave)="onBrandCardContainerHover(false)">
+      <img mat-card-image id="brand-logo" class="brand-logo" [src]="brand.logoPath"/>
+      <mat-card-content>
+        <span class="brand-name">{{brand.brandName}}</span>
+      </mat-card-content>
+    </mat-card>
+  </a>

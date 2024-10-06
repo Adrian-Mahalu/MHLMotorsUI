@@ -1,0 +1,54 @@
+// .car-generation-card {
+//     width: inherit;
+// }
+
+.car-generation-card-list-container {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     width: 100%;
+     flex-wrap: wrap;
+     gap: 10px;
+ }
+ 
+ .container {
+     width: 70%;
+ }
+ 
+ .something {
+     width: 15%;
+ }
+ 
+ .something-else {
+     width: 15%;
+ }
+ 
+ .app {
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     flex-wrap: wrap;
+     align-content: flex-start;
+     min-height: 800px;
+ }
+ 
+ // @media (max-width: 600px) {
+ //     .container {
+ //         height: 450px;
+ //     }
+ // }
+ 
+ // /* For screens between 600px and 960px */
+ // @media (min-width: 600px) and (max-width: 960px) {
+ //     .container {
+ //         //height: 300px;
+ //     }
+ // }
+ 
+ // /* For screens larger than 960px */
+ // @media (min-width: 960px) {
+ //     .container {
+ //         //height: 150px;
+ //     }
+ // }

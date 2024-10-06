@@ -1,0 +1,92 @@
+.generation-card {
+    width: 100%;
+    min-width: 600px;
+    height: 232px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+
+    background-color: #f0f2f5;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow:
+        0 3px 6px rgba(0, 0, 0, 0.16),
+        0 3px 6px rgba(0, 0, 0, 0.23);
+    color: #222a3e;
+
+    span {
+        font-family: "Lato-Regular";
+        font-size: 16px;
+    }
+}
+
+.generation-image {
+    width: 30%;
+    height: 100%;
+}
+
+.vertical-bar {
+    width: 1%;
+    min-width: 4px;
+    max-width: 4px;
+    height: 232px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.details-container {
+    width: 87%;
+    min-width: 232px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+mat-card-content .title {
+    font-size: 30px;
+}
+
+.details-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.detail-text{
+    width: 110px;
+}
+
+.separator {
+    width: 20px;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.small-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.red-background{
+    background-color: red;
+}
+
+.green-background {
+    background-color: green;
+}
+
+.red-text{
+    color: red;
+}
+
+.green-text {
+    color: green;
+}

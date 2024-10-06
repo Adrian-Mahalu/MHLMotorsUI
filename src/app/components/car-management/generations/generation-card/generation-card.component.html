@@ -1,0 +1,39 @@
+  <a [routerLink]="'Engines/' + generation.generationName">
+    <mat-card class="generation-card">
+      <div class="vertical-bar" [ngClass]="getVerticalBarColorClassByEndOfProduction(generation.endOfProduction)">
+      </div>
+      <img mat-card-image class="generation-image" [src]="generation.logoPath"/>
+      <mat-card-content class="details-container">
+        <span class="title">{{generation.brandName}} {{generation.generationName}}</span>
+    
+        <div class="details-row">
+            <img class="small-icon" src="../../../../../assets/ads/calendar-logo.svg" />
+            <span class="detail-text" [ngClass]="getProductionTextColorClassByEndOfProduction(generation.endOfProduction)">
+                {{generation.startOfProduction}} - {{generation.endOfProduction}}
+            </span>
+            <span class="separator">|</span>
+            <img class="small-icon" src="../../../../../assets/ads/body-type-logo.svg" />
+            <span>{{generation.bodyType}}</span>
+        </div>
+    
+        <div class="details-row">
+            <img class="small-icon" *ngIf="generation.fuelType === 'Petrol (Gasoline)'" src="../../../../../assets/ads/gas-station-logo.svg" />
+            <img class="small-icon" *ngIf="generation.fuelType === 'Fuel'" src="../../../../../assets/ads/gas-station-logo.svg" />
+            <img class="small-icon" *ngIf="generation.fuelType === 'Electricity'" src="../../../../../assets/ads/lightning-logo.svg" />
+            <img class="small-icon" *ngIf="generation.fuelType === 'Hybrid'" src="../../../../../assets/ads/hybrid-logo.svg" />
+            <img class="small-icon" *ngIf="generation.fuelType === 'Hydrogen'" src="../../../../../assets/ads/hydrogen-logo.svg" />
+            <span class="detail-text">{{generation.fuelType}}</span>
+            <span class="separator">|</span>
+            <img class="small-icon" src="../../../../../assets/ads/cloud-logo.svg" />
+            <span>{{generation.emissionStandard}}</span>
+        </div>
+    
+        <div class="details-row">
+            <img class="small-icon" src="../../../../../assets/ads/horsepower-logo.svg" />
+            <span>From {{generation.minHorsePower}} HP to {{generation.maxHorsePower}} HP</span>
+        </div>
+    </mat-card-content>
+    
+    </mat-card>
+  </a>
+  

@@ -1,0 +1,53 @@
+<a [routerLink]="'CarInfo/' + engine.id">
+    <mat-card class="engine-card">
+        <div class="vertical-bar" [ngClass]="getVerticalBarColorClassByEndOfProduction(engine.endOfProduction)"></div>
+      <mat-card-content class="details-container">
+            <span class="title">{{engine.engineName}}</span>
+  
+        <div class="details-row">
+          <img class="small-icon" src="../../../../../assets/ads/calendar-logo.svg" />
+          <span class="detail-text" [ngClass]="getProductionTextColorClassByEndOfProduction(engine.endOfProduction)">
+             {{engine.startOfProduction}} - {{engine.endOfProduction}}
+          </span>
+            <span class="separator">|</span>
+          <img class="small-icon" src="../../../../../assets/ads/transmission-logo.svg" />
+          <span>{{engine.typeOfGearbox}}</span>
+        </div>
+
+        <div class="details-row">
+          <div [ngSwitch]="engine.fuelType">
+            <div *ngSwitchCase="'Petrol'">
+              <img class="small-icon" src="../../../../../assets/ads/gas-station-logo.svg" />
+            </div>
+            <div *ngSwitchCase="'Diesel'">
+              <img class="small-icon" src="../../../../../assets/ads/gas-station-logo.svg" />
+            </div>
+            <div *ngSwitchCase="'Electricity'">
+              <img class="small-icon" src="../../../../../assets/ads/lightning-logo.svg" />
+            </div>
+            <div *ngSwitchCase="'Hybrid'">
+              <img class="small-icon" src="../../../../../assets/ads/hybrid-logo.svg" />
+            </div>
+            <div *ngSwitchCase="'Hydrogen'">
+              <img class="small-icon" src="../../../../../assets/ads/hydrogen-logo.svg" />
+            </div>
+            <div *ngSwitchDefault>
+              <img class="small-icon" src="../../../../../assets/ads/gas-station-logo.svg">
+            </div>
+          </div>
+            <span class="detail-text">{{engine.fuelType}}</span>
+            <span class="separator">|</span>
+          <img class="small-icon" src="../../../../../assets/ads/fuel-economy-logo.svg" />
+          <span>{{engine.fuelEconomyCombined}}</span>
+        </div>
+  
+        <div class="details-row">
+          <img class="small-icon" src="../../../../../assets/ads/horsepower-logo.svg" />
+          <span class="detail-text">{{engine.power}} HP</span>
+          <span class="separator">|</span>
+          <img class="ce-small-icon" src="../../../../../assets/ads/max-speed-logo.svg" />
+          <span>{{engine.maximumSpeed}} Km/h</span>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </a>  

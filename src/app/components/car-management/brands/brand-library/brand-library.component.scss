@@ -1,0 +1,30 @@
+.car-brand-library-container {
+   display: flex;
+   flex-direction: row;
+   align-content: center;
+}
+
+.container {
+    width: 70%;
+    // min-height: 900px;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.something {
+    width: 15%;
+}
+
+.something-else {
+    width: 15%;
+}
+
+.app {
+    width: 100%;
+    display: flex;
+    min-height: 900px;
+}

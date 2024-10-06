@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; 
+    background-color: #f0f2f5;
+  }
+  
+  .error-card {
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 
+                0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+  .error-title {
+    font-family: 'Lato-Regular';
+    font-size: 24px;
+    color: #222a3e;
+  }
+  
+  .error-message {
+    font-family: 'Lato-Regular';
+    font-size: 16px;
+    color: var(--mhl-dark-grey);
+  }
+  
+  a {
+    text-decoration: none;
+  }

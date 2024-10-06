@@ -1,0 +1,25 @@
+<div class="container">
+    <form class="car-form" [formGroup]="carForm" (ngSubmit)="onSubmit()">
+        <mat-form-field class="car-row-full-width">
+            <label for="brand">Brand</label>
+            <input matInput type="text" formControlName="brand" id="brand">
+        </mat-form-field>
+        <mat-form-field class="car-row-full-width">
+            <label for="model">Model</label>
+            <input matInput type="text" formControlName="model" id="model">
+          </mat-form-field>
+          <mat-form-field class="car-row-full-width">
+            <label for="generation">Generation</label>
+            <input matInput type="text" formControlName="generation" id="generation">
+          </mat-form-field>
+          <mat-form-field class="car-row-full-width">
+            <label for="engine">Engine</label>
+            <input matInput type="text" formControlName="engine" id="engine">
+          </mat-form-field>
+          <mat-form-field class="car-row-full-width">
+            <label for="hp">HP</label>
+            <input matInput type="text" formControlName="hp" id="hp">
+          </mat-form-field>
+          <button type="submit" [disabled]="!carForm.valid">Submit</button>
+    </form>
+</div>

@@ -1,0 +1,37 @@
+<!-- <a routerLink="Generations/{{model.modelName}}">
+    <mat-card class="car-model-card">   
+        <div class="car-model-logo-container">
+            <img src="{{model.logoPath}}"/>
+        </div>
+        <div class="car-model-name-container">
+            <span class="car-model-name-text">{{model.modelName}}</span>
+        </div>
+    </mat-card> 
+</a> -->
+
+<!-- <a [routerLink]="'Generations/' + model.modelName">
+    <mat-card class="car-model-card">
+      
+      <mat-card-header>
+        <div mat-card-avatar class="car-model-logo-container">
+          <img [src]="model.logoPath" alt="{{model.modelName}} Logo"/>
+        </div>
+      </mat-card-header>
+  
+      <mat-card-content class="car-model-name-container">
+        <span class="car-model-name-text">{{model.modelName}}</span>
+      </mat-card-content>
+  
+    </mat-card>
+  </a> -->
+
+  
+  <a [routerLink]="'Generations/' + model.modelName">
+  <mat-card class="model-card">
+      <img mat-card-image class="model-logo" [src]="model.logoPath"/>
+      <mat-card-content>
+        <span class="model-name">{{model.modelName}}</span>
+      </mat-card-content>
+  </mat-card>
+  </a>
+

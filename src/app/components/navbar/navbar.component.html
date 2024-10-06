@@ -1,0 +1,133 @@
+<div class="navbar-outter-container">
+    <div class="navbar-inner-container">
+      <div class="app-logo-container">
+        <a [routerLink]="''">
+          <img [src]="appLogoSrc" />
+        </a>
+      </div>
+      <div class="motto-container">
+        <span>One of the biggest<br/>vehicle markets</span>
+      </div>
+      <div class="toolbox">
+        <a [routerLink]="'PageNotFound'">
+          <div class="tool">
+            <img src="../../../assets/navbar/navbar-car-icon-default.svg"/>
+            <span>Cars</span>
+          </div>
+        </a>
+        <a [routerLink]="'PageNotFound'">
+        <div class="tool">
+          <img src="../../../assets/navbar/navbar-parts-and-accessories-icon-default.svg"/>
+          <span>Parts & Accessories</span>
+        </div>
+        </a>
+        <a [routerLink]="'PageNotFound'">
+        <div class="tool">
+          <img src="../../../assets/navbar/navbar-car-services-icon-default.svg"/>
+          <span>Car Services</span>
+        </div>
+        </a>
+        <a [routerLink]="'PageNotFound'">
+        <div class="tool">
+          <img src="../../../assets/navbar/navbar-technical-data-icon-default.svg"/>
+          <span>Technical Data</span>
+        </div>
+      </a>
+      </div>
+      <div [ngClass]="{'hamburger-menu-container-open': isHamburgerMenuActive, 'hamburger-menu-container-closed': !isHamburgerMenuActive}">
+        @if (showHamburgerMenuIcon){
+          <div class="hamburger-icon-container" (click)="toggleHamburgerMenu()">
+            <img [src]="hamburgerMenuOpenLogoSrc"/>
+          </div>
+        }
+        @if (isHamburgerMenuActive){
+          <div class="hamburger-menu-container">
+            <div class="menu-row-container">
+              <span>Menu</span>
+              <div class="hamburger-x-icon-container" (click)="toggleHamburgerMenu()">
+                <img [src]="hamburgerMenuCloseLogoSrc" />
+                </div>
+            </div>
+            <div class="underscore-container">
+              <div>
+                <hr/>
+              </div>
+            </div>
+            <div class="my-mhl-motors-title">
+              <span>My MHL Motors</span>
+            </div>
+            <a [routerLink]="'PageNotFound'">
+            <div class="pair">
+              <img src="../../../assets/navbar/navbar-car-icon-default.svg"/>
+              <span>Cars</span>
+            </div>
+            </a>
+            <a [routerLink]="'PageNotFound'">
+            <div class="pair">
+              <img src="../../../assets/navbar/navbar-parts-and-accessories-icon-default.svg"/>
+              <span>Parts & Accessories</span>
+            </div>
+            </a>
+            <a [routerLink]="'PageNotFound'">
+            <div class="pair">
+              <img src="../../../assets/navbar/navbar-car-services-icon-default.svg"/>
+              <span>Car Services</span>
+            </div>
+            </a>
+            <a [routerLink]="'PageNotFound'">
+            <div class="pair">
+              <img src="../../../assets/navbar/navbar-technical-data-icon-default.svg"/>
+              <span>Technical Data</span>
+            </div>
+            </a>
+            <div class="underscore-container">
+              <div>
+                <hr/>
+              </div>
+            </div>
+            <a [routerLink]="'PageNotFound'">
+            <div class="pair">
+              <img src="../../../assets/navbar/navbar-messages-icon-0-default.svg"/>
+              <span>Messages</span>
+            </div>
+            </a>
+            <a [routerLink]="'PageNotFound'">
+            <div class="pair">
+              <img src="../../../assets/navbar/navbar-new-ad-icon-default.svg"/>
+              <span>My Searches</span>
+            </div>
+            </a>
+            <a [routerLink]="'PageNotFound'">
+            <div class="pair">
+              <img src="../../../assets/navbar/navbar-favorites-icon-default.svg"/>
+              <span>Favorites</span>
+            </div>
+            </a>
+            <a [routerLink]="'PageNotFound'">
+            <div class="pair">
+              <img src="../../../assets/navbar/navbar-profile-icon-default.svg"/>
+              <span>User Profile</span>
+            </div>
+            </a>
+            <div class="underscore-container">
+              <div>
+                <hr/>
+              </div>
+            </div>
+            <a [routerLink]="'PageNotFound'">
+            <div class="pair">
+              <img src="../../../assets/navbar/navbar-new-ad-icon-default.svg"/>
+              <span>New Ad</span>
+            </div>
+            </a>
+            <a [routerLink]="'PageNotFound'">
+            <div class="login">
+              <span>Log In / Sign Up</span>
+            </div>
+            </a>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+  

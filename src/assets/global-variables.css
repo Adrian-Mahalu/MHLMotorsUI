@@ -1,0 +1,11 @@
+:root {
+    --mhl-dark-grey: #2C2C2C;
+    --mhl-contour-grey: #3D3D3D;
+    --mhl-dirty-white: #D9D9D9;
+    --mhl-light-blue: #7FC4F2;
+    --mhl-notification-red: #F21F3F;
+    --mhl-lime: #7FFC7F;
+
+    --inter-thin: 'Inter-Thin';
+    --inter-extralight: 'Inter-ExtraLight'
+}

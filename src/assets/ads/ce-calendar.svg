@@ -1,0 +1,41 @@
+<svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="82.999" y1="314" x2="921.064" y2="314" stroke="#222A3E" stroke-width="50"/>
+<rect x="75" y="100" width="850" height="850" rx="150" stroke="#222A3E" stroke-width="50"/>
+<rect x="265" y="25" width="65" height="85" rx="32" fill="#222A3E"/>
+<rect x="674" y="25" width="65" height="85" rx="32" fill="#222A3E"/>
+<rect x="210" y="400" width="120" height="100" rx="32" fill="#222A3E"/>
+<rect x="210" y="722" width="120" height="100" rx="32" fill="#222A3E"/>
+<rect x="440" y="731" width="120" height="100" rx="32" fill="#222A3E"/>
+<rect x="440" y="400" width="120" height="100" rx="32" fill="#222A3E"/>
+<rect x="679" y="400" width="120" height="100" rx="32" fill="#222A3E"/>
+<g clip-path="url(#clip0_75_2)">
+<rect x="679" y="722" width="120" height="100" rx="32" fill="#222A3E"/>
+<rect x="679" y="722" width="120" height="100" rx="32" fill="#222A3E"/>
+</g>
+<g clip-path="url(#clip1_75_2)">
+<rect x="210" y="561" width="120" height="100" rx="32" fill="#222A3E"/>
+<rect x="210" y="561" width="120" height="100" rx="32" fill="#222A3E"/>
+</g>
+<g clip-path="url(#clip2_75_2)">
+<rect x="440" y="561" width="120" height="100" rx="32" fill="#222A3E"/>
+<rect x="440" y="561" width="120" height="100" rx="32" fill="#222A3E"/>
+</g>
+<g clip-path="url(#clip3_75_2)">
+<rect x="679" y="561" width="120" height="100" rx="32" fill="#222A3E"/>
+<rect x="679" y="561" width="120" height="100" rx="32" fill="#222A3E"/>
+</g>
+<defs>
+<clipPath id="clip0_75_2">
+<rect x="679" y="722" width="120" height="100" rx="32" fill="white"/>
+</clipPath>
+<clipPath id="clip1_75_2">
+<rect x="210" y="561" width="120" height="100" rx="32" fill="white"/>
+</clipPath>
+<clipPath id="clip2_75_2">
+<rect x="440" y="561" width="120" height="100" rx="32" fill="white"/>
+</clipPath>
+<clipPath id="clip3_75_2">
+<rect x="679" y="561" width="120" height="100" rx="32" fill="white"/>
+</clipPath>
+</defs>
+</svg>

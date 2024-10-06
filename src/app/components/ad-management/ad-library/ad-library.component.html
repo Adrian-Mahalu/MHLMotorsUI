@@ -1,0 +1,32 @@
+<div class="app">
+    <div class="something">
+
+    </div>
+    <div class="container">
+
+        <div class="filters-container">
+            <div>
+                <select [(ngModel)]="selectedCategory">
+                    <option value="Any">Any</option>
+                    <option *ngFor="let brand of carBrands" [value]="brand.id">{{ brand.name }}</option>
+                  </select>
+                  
+              </div>
+              
+              <div>
+                <select>
+                    <option *ngFor="let model of carModels" [value]="model.id" [hidden]="selectedCategory !== 'Any' && model.category !== selectedCategory">{{ model.name }}</option>
+                </select>
+              </div>
+        </div>
+        <!-- <app-ad-filters></app-ad-filters> -->
+        <app-ad-snippet></app-ad-snippet>
+        <app-ad-snippet></app-ad-snippet>
+        <app-ad-snippet></app-ad-snippet>
+        <app-ad-snippet></app-ad-snippet>
+        <app-ad-snippet></app-ad-snippet>
+    </div>
+    <div class="something-else">
+    
+    </div>
+</div>

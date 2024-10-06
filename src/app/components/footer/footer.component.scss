@@ -1,0 +1,46 @@
+.footer-container {
+    width: 100vw;
+    height: 25vh;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    //transition: height 1s ease;
+    background-color: var(--mhl-dark-grey);
+}
+
+.footer-column{
+    width: 20%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    
+}
+
+span {
+    color: #f0f2f5;
+    font-family: "Lato-Regular";
+    font-weight: 300;
+    font-size: 1vw;
+
+    //transition: font-size 0.2s;
+}
+
+span:hover {
+    color: #7fc4f2;
+}
+
+
+@media (max-width: 1000px) {
+}
+
+@media (max-width: 500px) {
+}

@@ -1,0 +1,32 @@
+@import '../src/assets/global-variables.css';
+
+@font-face {
+    font-family: 'Inter-Thin';
+    src: url('./assets/fonts/Inter-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'Inter-ExtraLight';
+    src: url('./assets/fonts/Inter-ExtraLight.ttf');
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    font-family: var(--inter-extralight);
+    font-size: 17px;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+body {
+    margin: 0px;
+    width: 100%;
+    max-width: 7680px;
+    background-color: white;
+}
