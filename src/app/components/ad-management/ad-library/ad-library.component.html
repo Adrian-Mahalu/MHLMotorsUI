@@ -1,32 +1,42 @@
+<!--
 <div class="app">
     <div class="something">
 
     </div>
     <div class="container">
 
-        <div class="filters-container">
+&lt;!&ndash;        <div class="filters-container">
             <div>
                 <select [(ngModel)]="selectedCategory">
                     <option value="Any">Any</option>
                     <option *ngFor="let brand of carBrands" [value]="brand.id">{{ brand.name }}</option>
                   </select>
-                  
+
               </div>
-              
+
               <div>
                 <select>
                     <option *ngFor="let model of carModels" [value]="model.id" [hidden]="selectedCategory !== 'Any' && model.category !== selectedCategory">{{ model.name }}</option>
                 </select>
               </div>
-        </div>
-        <!-- <app-ad-filters></app-ad-filters> -->
-        <app-ad-snippet></app-ad-snippet>
-        <app-ad-snippet></app-ad-snippet>
-        <app-ad-snippet></app-ad-snippet>
-        <app-ad-snippet></app-ad-snippet>
-        <app-ad-snippet></app-ad-snippet>
+        </div>&ndash;&gt;
+        &lt;!&ndash; <app-ad-filters></app-ad-filters> &ndash;&gt;
+        <app-ad-snippet [guid]="'bb13dbe4-1014-4f22-a459-6af41fd6a532'"></app-ad-snippet>
+        <app-ad-snippet [guid]="'c144ab0a-5464-4649-8cc3-aef623506f3c'"></app-ad-snippet>
+        <app-ad-snippet [guid]="'bd0f0a6a-8402-413f-86ce-efec2bafc185'"></app-ad-snippet>
+        <app-ad-snippet [guid]="'6eb40db6-cc71-4bc0-9b9e-d299f3c0f13a'"></app-ad-snippet>
+        <app-ad-snippet [guid]="'5e471e0f-c64f-4175-8f7e-26922d0b4506'"></app-ad-snippet>
     </div>
     <div class="something-else">
-    
+
     </div>
+</div>
+-->
+
+<div class="container">
+  <app-ad-snippet [guid]="'bb13dbe4-1014-4f22-a459-6af41fd6a532'"></app-ad-snippet>
+  <app-ad-snippet [guid]="'c144ab0a-5464-4649-8cc3-aef623506f3c'"></app-ad-snippet>
+  <app-ad-snippet [guid]="'bd0f0a6a-8402-413f-86ce-efec2bafc185'"></app-ad-snippet>
+  <app-ad-snippet [guid]="'6eb40db6-cc71-4bc0-9b9e-d299f3c0f13a'"></app-ad-snippet>
+  <app-ad-snippet [guid]="'5e471e0f-c64f-4175-8f7e-26922d0b4506'"></app-ad-snippet>
 </div>

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { getModelsFirstCharacterDictionary } from 'src/app/logic-handlers/model-library-logic-handler';
 import { Model } from 'src/app/models/car-models/model';
@@ -13,7 +13,7 @@ import { ModelCardComponent } from '../model-card/model-card.component';
   templateUrl: './model-library.component.html',
   styleUrls: ['./model-library.component.scss']
 })
-export class ModelLibraryComponent {
+export class ModelLibraryComponent implements OnInit {
   brandNameFromURL: string;
   modelsList: Model[];
   modelsFirstCharacterDictionary = new Map<string, Model[]>();

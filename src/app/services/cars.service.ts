@@ -21,7 +21,7 @@ export class CarsService {
     return this.http.get<Car>(`${environment.apiUrl}/${this.url}/GetCarByIdAsync/${carId}`);
   }
 
-   public addCarAdAsync(carAd: CarAd): Observable<CarAd> {
+  public addCarAdAsync(carAd: CarAd): Observable<CarAd> {
      return this.http.post<CarAd>(`${environment.apiUrl}/${this.url}/AddCarAdAsync`, carAd);
    }
 }

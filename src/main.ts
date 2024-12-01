@@ -13,6 +13,7 @@ import { EngineLibraryComponent } from './app/components/car-management/engines/
 import { CarInfoComponent } from './app/components/car-management/car-info/car-info.component';
 import { AdLibraryComponent } from './app/components/ad-management/ad-library/ad-library.component';
 import { PageNotFoundComponent } from './app/components/page-not-found/page-not-found.component';
+import {FullCarAdComponent} from "./app/components/ad-management/full-car-ad/full-car-ad.component";
 
 const appRoute: Routes = [
   { path: 'PageNotFound', component: PageNotFoundComponent},
@@ -25,6 +26,7 @@ const appRoute: Routes = [
   { path: 'Brands/Models/:brandName/Generations/:modelName/Engines/:generationName/CarInfo/:carId', component: CarInfoComponent },
   { path: 'Ads', component: AdLibraryComponent },
   { path: 'Ads/Home', component: HomeComponent },
+  { path: 'Ads/:guid', component: FullCarAdComponent },
   { path: '', component: HomeComponent }
 ]
 

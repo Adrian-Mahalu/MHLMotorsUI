@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 15px;
+}
+
+.undiv {
+  width: 100%;
+  height: 50%;
+  background-color: #F21F3F;
+}

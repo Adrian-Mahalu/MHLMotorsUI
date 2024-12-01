@@ -1,0 +1,59 @@
+{
+  "ads": [
+    {
+      "id": "6eb40db6-cc71-4bc0-9b9e-d299f3c0f13a",
+      "title": "Audi A7 3.0TDI BiTurbo",
+      "phoneNumber": "031203120",
+      "price": 15500,
+      "kilometers": 165000,
+      "horsepower": 272,
+      "fuel": "diesel",
+      "gearbox": "automatic",
+      "dateOfFabrication": "02/2015"
+    },
+    {
+      "id": "bb13dbe4-1014-4f22-a459-6af41fd6a532",
+      "title": "Audi A7 3.0TDI BiTurbo",
+      "phoneNumber": "031203120",
+      "price": 15500,
+      "kilometers": 165000,
+      "horsepower": 272,
+      "fuel": "diesel",
+      "gearbox": "automatic",
+      "dateOfFabrication": "02/2015"
+    },
+    {
+      "id": "c144ab0a-5464-4649-8cc3-aef623506f3c",
+      "title": "Audi A7 3.0TDI BiTurbo",
+      "phoneNumber": "031203120",
+      "price": 15500,
+      "kilometers": 165000,
+      "horsepower": 272,
+      "fuel": "diesel",
+      "gearbox": "automatic",
+      "dateOfFabrication": "02/2015"
+    },
+    {
+      "id": "bd0f0a6a-8402-413f-86ce-efec2bafc185",
+      "title": "Audi A7 3.0TDI BiTurbo",
+      "phoneNumber": "031203120",
+      "price": 15500,
+      "kilometers": 165000,
+      "horsepower": 272,
+      "fuel": "diesel",
+      "gearbox": "automatic",
+      "dateOfFabrication": "02/2015"
+    },
+    {
+      "id": "5e471e0f-c64f-4175-8f7e-26922d0b4506",
+      "title": "Audi A7 3.0TDI BiTurbo",
+      "phoneNumber": "031203120",
+      "price": 15500,
+      "kilometers": 165000,
+      "horsepower": 272,
+      "fuel": "diesel",
+      "gearbox": "automatic",
+      "dateOfFabrication": "02/2015"
+    }
+  ]
+}

@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ModelLibraryComponent } from './components/car-management/models/model-library/model-library.component';
 import { GenerationLibraryComponent } from './components/car-management/generations/generation-library/generation-library.component';
@@ -9,7 +8,6 @@ import { CarInfoComponent } from './components/car-management/car-info/car-info.
 import { AppRoutingModule } from './app-routing.module';
 import { EngineLibraryComponent } from './components/car-management/engines/engine-library/engine-library.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { BrandLibraryComponent } from './components/car-management/brands/brand-library/brand-library.component';
 import { AdLibraryComponent } from './components/ad-management/ad-library/ad-library.component';
@@ -17,6 +15,7 @@ import { AddAnAddComponent } from './components/ad-management/add-an-add/add-an-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarFormComponent } from './components/ad-management/car-form/car-form.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import {FullCarAdComponent} from "./components/ad-management/full-car-ad/full-car-ad.component";
 
 const appRoute: Routes = [
   { path: 'PageNotFound', component: PageNotFoundComponent},
@@ -28,6 +27,7 @@ const appRoute: Routes = [
   { path: 'Brands/Models/:brandName/Generations/:modelName/Engines/:generationName', component: EngineLibraryComponent},
   { path: 'Brands/Models/:brandName/Generations/:modelName/Engines/:generationName/CarInfo/:carId', component: CarInfoComponent},
   { path: 'Ads', component: AdLibraryComponent},
+  { path: 'Ads/:id', component: FullCarAdComponent },
   { path: '', component: HomeComponent } // to create view for specific card // multiple prameters Cars/:name/:id,
 ]
 
