@@ -8,4 +8,7 @@ export class FullAd {
   fuel: string;
   gearbox: string;
   dateOfFabrication: string;
+  imageSource: string;
+  sellerName: string;
+  adDescription: string;
 }

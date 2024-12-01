@@ -20,7 +20,7 @@ hr {
     display: flex;
     justify-content: center;
 
-    background-color: var(--mhl-light-blue);
+    background-color: var(--mhl-dark-grey);
 }
 
 .navbar-inner-container {
@@ -88,7 +88,7 @@ hr {
     overflow: hidden;
 
     position: absolute;
-    top: 0; 
+    top: 0;
     right: 0;
 
     img {
@@ -171,7 +171,7 @@ hr {
     justify-content: center;
     align-content: flex-end;
     flex-wrap: wrap;
-    
+
 
     span {
         width: 100%;
@@ -185,7 +185,7 @@ hr {
     }
  }
 
- 
+
 .toolbox {
     display: flex;
     flex-grow: 1;

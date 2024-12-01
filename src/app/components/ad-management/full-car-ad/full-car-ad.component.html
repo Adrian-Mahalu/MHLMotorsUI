@@ -1,19 +1,59 @@
 <div class="container">
-  <mat-grid-list cols="8" rowHeight="500px">
-    <mat-grid-tile colspan="6" rowspan="1" style="background-color: lightpink;">
-      <div class="undiv">
-        <p>{{ ad.title }}</p>
-        <p>{{ ad.price }}</p>
-
+  <mat-grid-list cols="10" rowHeight="250px">
+    <mat-grid-tile colspan="7" rowspan="2">
+      <div class="image-slider-container">
+        <img [src]="ad.imageSource" alt=""/>
       </div>
     </mat-grid-tile>
-    <mat-grid-tile colspan="2" rowspan="1" style="background-color: lightgreen;">
-      Two
-    </mat-grid-tile>
-    <mat-grid-tile colspan="8" rowspan="1" style="background-color: blue;">
-      <div class="undiv">
-        <p>WOW</p>
+    <mat-grid-tile colspan="3" rowspan="2">
+      <div class="seller-container">
+        <img src="assets/navbar/navbar-profile-icon-default.svg" alt=""/>
+        <p>{{ ad.sellerName }}</p>
+        <p>{{ ad.phoneNumber }}</p>
       </div>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="7" rowspan="1">
+      <div class="details-container">
+        <div class="title-price-container">
+          <span><h2>{{ad.title}}</h2></span>
+          <span><h3>{{ad.price}} $</h3></span>
+        </div>
+        <div class="car-data-container">
+          <div>
+            <img src="assets/ads/max-speed-logo.svg" alt=""/>
+            <span><h3>{{ad.kilometers}}</h3></span>
+          </div>
+          <div>
+            <img src="assets/ads/horsepower-logo.svg" alt=""/>
+            <span><h3>{{ad.horsepower}}</h3></span>
+          </div>
+          <div>
+            <img src="assets/ads/gas-station-logo.svg" alt=""/>
+            <span><h3>{{ad.fuel}}</h3></span>
+          </div>
+          <div>
+            <img src="assets/ads/transmission-logo.svg" alt=""/>
+            <span><h3>{{ad.gearbox}}</h3></span>
+          </div>
+          <div>
+            <img src="assets/ads/calendar-logo.svg" alt=""/>
+            <span><h3>{{ad.dateOfFabrication}}</h3></span>
+          </div>
+        </div>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="7" rowspan="2">
+        <div class="description-container">
+          <div>
+            <span>
+              {{ad.adDescription}}
+            </span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="assets/ads/fuel-economy-logo.svg" alt=""/>
+            <span>19.239</span>
+          </div>
+        </div>
     </mat-grid-tile>
   </mat-grid-list>
 </div>
