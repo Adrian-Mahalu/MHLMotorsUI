@@ -1,0 +1,60 @@
+.container {
+    width: 100%;
+    min-height: 750px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+
+    align-items: center;
+}
+
+mat-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    font-family: "Lato-Regular";
+    font-weight: 300;
+    font-size: 20px;
+    color: #d9d9d9;
+}
+
+.title {
+    font-family: "Lato-Regular";
+    font-weight: 300;
+    font-size: 40px;
+    color: #d9d9d9;
+}
+
+.mat-form-field {
+    display: block;
+    margin-top: 16px;
+}
+
+// .mat-mdc-radio-button ~ .mat-mdc-radio-button {
+//     margin-left: 16px;
+// }
+
+// mat-radio-group {
+//     mat-radio-button {
+//         color: black;
+//     }
+//     width: 100%;
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: space-around;
+// }

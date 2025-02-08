@@ -1,0 +1,49 @@
+.container {
+    width: 100%;
+    min-height: 750px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.tile-container {
+    width: 20%;
+    border: 2px solid grey;
+    border-radius: 15px;
+    min-width: 300px;
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #f0f2f5;
+}
+
+.tile-container:hover {
+    background-color: var(--mhl-dark-grey);
+
+    span {
+        color: #7fc4f2;
+    }
+}
+
+.tile-name {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+span {
+    font-family: "Lato-Regular";
+    font-weight: 300;
+    font-size: 40px;
+    color: #222a3e;
+}

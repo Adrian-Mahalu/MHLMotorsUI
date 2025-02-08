@@ -17,19 +17,19 @@ import { CarFormComponent } from './components/ad-management/car-form/car-form.c
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import {FullCarAdComponent} from "./components/ad-management/full-car-ad/full-car-ad.component";
 
-const appRoute: Routes = [
-  { path: 'PageNotFound', component: PageNotFoundComponent},
-  { path: 'Home', component: HomeComponent},
-  { path: 'Brands', component: BrandLibraryComponent },
-  { path: 'CarForm', component: CarFormComponent},
-  { path: 'Brands/Models/:brandName', component: ModelLibraryComponent },
-  { path: 'Brands/Models/:brandName/Generations/:modelName', component: GenerationLibraryComponent},
-  { path: 'Brands/Models/:brandName/Generations/:modelName/Engines/:generationName', component: EngineLibraryComponent},
-  { path: 'Brands/Models/:brandName/Generations/:modelName/Engines/:generationName/CarInfo/:carId', component: CarInfoComponent},
-  { path: 'Ads', component: AdLibraryComponent},
-  { path: 'Ads/:id', component: FullCarAdComponent },
-  { path: '', component: HomeComponent } // to create view for specific card // multiple prameters Cars/:name/:id,
-]
+// const appRoute: Routes = [
+// //   { path: 'PageNotFound', component: PageNotFoundComponent},
+//   { path: 'Home', component: HomeComponent},
+//   { path: 'Brands', component: BrandLibraryComponent },
+//   { path: 'CarForm', component: CarFormComponent},
+//   { path: 'Brands/Models/:brandName', component: ModelLibraryComponent },
+//   { path: 'Brands/Models/:brandName/Generations/:modelName', component: GenerationLibraryComponent},
+//   { path: 'Brands/Models/:brandName/Generations/:modelName/Engines/:generationName', component: EngineLibraryComponent},
+//   { path: 'Brands/Models/:brandName/Generations/:modelName/Engines/:generationName/CarInfo/:carId', component: CarInfoComponent},
+//   { path: 'Ads', component: AdLibraryComponent},
+//   { path: 'Ads/:id', component: FullCarAdComponent },
+//   { path: '', component: HomeComponent } // to create view for specific card // multiple prameters Cars/:name/:id,
+// ]
 
 @NgModule({
     declarations: [
@@ -41,7 +41,7 @@ const appRoute: Routes = [
         BrowserModule,
         AppRoutingModule,
         HttpClientModule,
-        RouterModule.forRoot(appRoute),
+        //RouterModule.forRoot(appRoute),
         BrowserAnimationsModule,
         NavbarComponent
     ]

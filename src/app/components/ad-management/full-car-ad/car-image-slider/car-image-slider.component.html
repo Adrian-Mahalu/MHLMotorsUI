@@ -1,0 +1,15 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="image-slider">
+    <div class="slider-container">
+      <img [src]="images[currentIndex]" alt="Image Slider" class="slider-image">
+    </div>
+  
+    <button mat-icon-button (click)="previousImage()" class="slider-nav-button">
+      <mat-icon>arrow_forward</mat-icon>
+    </button>
+  
+    <button mat-icon-button (click)="nextImage()" class="slider-nav-button">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+  </div>
+  

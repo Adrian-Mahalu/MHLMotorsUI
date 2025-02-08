@@ -1,25 +1,47 @@
-<div class="container">
-    <form class="car-form" [formGroup]="carForm" (ngSubmit)="onSubmit()">
-        <mat-form-field class="car-row-full-width">
-            <label for="brand">Brand</label>
-            <input matInput type="text" formControlName="brand" id="brand">
-        </mat-form-field>
-        <mat-form-field class="car-row-full-width">
-            <label for="model">Model</label>
-            <input matInput type="text" formControlName="model" id="model">
-          </mat-form-field>
-          <mat-form-field class="car-row-full-width">
-            <label for="generation">Generation</label>
-            <input matInput type="text" formControlName="generation" id="generation">
-          </mat-form-field>
-          <mat-form-field class="car-row-full-width">
-            <label for="engine">Engine</label>
-            <input matInput type="text" formControlName="engine" id="engine">
-          </mat-form-field>
-          <mat-form-field class="car-row-full-width">
-            <label for="hp">HP</label>
-            <input matInput type="text" formControlName="hp" id="hp">
-          </mat-form-field>
-          <button type="submit" [disabled]="!carForm.valid">Submit</button>
-    </form>
-</div>
+<form [formGroup]="adForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="title">Title</label>
+    <input id="title" formControlName="title" type="text" />
+  </div>
+  <div>
+    <label for="phoneNumber">Phone Number</label>
+    <input id="phoneNumber" formControlName="phoneNumber" type="text" />
+  </div>
+  <div>
+    <label for="kilometers">Kilometers</label>
+    <input id="kilometers" formControlName="kilometers" type="number" />
+  </div>
+  <div>
+    <label for="horsepower">Horsepower</label>
+    <input id="horsepower" formControlName="horsepower" type="number" />
+  </div>
+  <div>
+    <label for="fuel">Fuel Type</label>
+    <input id="fuel" formControlName="fuel" type="text" />
+  </div>
+  <div>
+    <label for="gearbox">Gearbox</label>
+    <input id="gearbox" formControlName="gearbox" type="text" />
+  </div>
+  <div>
+    <label for="dateOfFabrication">Date of Fabrication</label>
+    <input id="dateOfFabrication" formControlName="dateOfFabrication" type="date" />
+  </div>
+  <div>
+    <label for="sellerName">Seller Name</label>
+    <input id="sellerName" formControlName="sellerName" type="text" />
+  </div>
+  <div>
+    <label for="adDescription">Ad Description</label>
+    <textarea id="adDescription" formControlName="adDescription"></textarea>
+  </div>
+  <div>
+    <label for="price">Price</label>
+    <input id="price" formControlName="price" type="number" step="0.01" />
+  </div>
+  <div>
+    <label for="imageSource">Image Source</label>
+    <input id="imageSource" formControlName="imageSource" type="text" />
+  </div>
+  <button type="submit" [disabled]="adForm.invalid">Submit</button>
+</form>

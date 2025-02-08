@@ -1,12 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import {FormBuilder, FormGroup, FormsModule, NonNullableFormBuilder, Validators} from '@angular/forms';
+import {FormBuilder, FormGroup, FormsModule, Validators} from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-import { Car } from 'src/app/models/car-models/car';
-import { CarsService } from 'src/app/services/cars.service';
-import { emptyGuid } from '../../../common/common-constants';
-import { CarAd } from 'src/app/models/car-models/car-ad';
+import { FullAd } from 'src/app/models/ad-models/full-ad';
+import { FullAdService } from "../../../services/full-ad.service";
 
 @Component({
   selector: 'app-car-form',
@@ -16,34 +14,48 @@ import { CarAd } from 'src/app/models/car-models/car-ad';
   imports: [FormsModule, MatFormFieldModule, MatInputModule, ReactiveFormsModule]
 })
 
-export class CarFormComponent {
-  carForm: FormGroup;
+export class CarFormComponent implements OnInit {
+  adForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder, private carsService: CarsService) {
-    this.carForm = this.formBuilder.group({
-      brand: ['', Validators.required],
-      model: ['', Validators.required],
-      generation: ['', Validators.required],
-      engine: ['', Validators.required],
-      hp: [null, Validators.required]
+  constructor(private formBuilder: FormBuilder, private fullAdService: FullAdService) {
+  }
+
+  ngOnInit(): void {
+    this.adForm = this.formBuilder.group({
+      title: ['', [Validators.required]],
+      phoneNumber: ['', [Validators.required, Validators.pattern(/^[0-9]{10}$/)]],
+      kilometers: ['', [Validators.required, Validators.pattern(/^[0-9]+$/)]],
+      horsepower: ['', [Validators.required, Validators.pattern(/^[0-9]+$/)]],
+      fuel: ['', Validators.required],
+      gearbox: ['', Validators.required],
+      dateOfFabrication: ['', Validators.required],
+      sellerName: ['', Validators.required],
+      adDescription: ['', Validators.required],
+      price: ['', [Validators.required, Validators.pattern(/^\d+(\.\d{1,2})?$/)]],
+      imageSource: ['']
     });
   }
 
   onSubmit() {
-    if(this.carForm.valid) {
-      const carData = this.carForm.value;
-      const newCarAd: CarAd = {
-        brandName: carData.brand,
-        modelName: carData.model,
-        generationName: carData.generation,
-        engineName: carData.engine,
-        power: carData.hp,
-        isCommonBrand: false,
-        id: emptyGuid
+    if(this.adForm.valid) {
+      const carData = this.adForm.value;
+      const fullAd: FullAd = {
+        title: carData.title,
+        phoneNumber: carData.phoneNumber,
+        kilometers: carData.kilometers,
+        horsepower: carData.horsepower,
+        fuel: carData.fuel,
+        gearbox: carData.gearbox,
+        dateOfFabrication: carData.dateOfFabrication,
+        sellerName: carData.sellerName,
+        adDescription: carData.adDescription,
+        price: carData.price,
+        imageSource: '',
+        id: crypto.randomUUID()
       };
 
-      this.carsService.addCarAdAsync(newCarAd).subscribe((response) => {
-        console.log(response);
+      this.fullAdService.postAd(fullAd).subscribe((response) => {
+
       });
     }
   }

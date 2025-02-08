@@ -11,8 +11,19 @@ export class FullAdService {
 
   constructor(private http: HttpClient) { }
 
+  public getAds(): Observable<FullAd> {
+    const endpoint = `${this.url}`;
+    return this.http.get<FullAd>(endpoint);
+  }
+
   public getFullAdById(id: string): Observable<FullAd> {
     const endpoint = `${this.url}/${id}`;
     return this.http.get<FullAd>(endpoint);
   }
+
+  public postAd(ad: FullAd): Observable<FullAd> {
+    const endpoint = this.url;
+    return this.http.post<FullAd>(endpoint, ad);
+  }
+
 }

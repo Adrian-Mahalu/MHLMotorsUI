@@ -14,12 +14,16 @@ import { CarInfoComponent } from './app/components/car-management/car-info/car-i
 import { AdLibraryComponent } from './app/components/ad-management/ad-library/ad-library.component';
 import { PageNotFoundComponent } from './app/components/page-not-found/page-not-found.component';
 import {FullCarAdComponent} from "./app/components/ad-management/full-car-ad/full-car-ad.component";
+import { CarServicesComponent } from './app/components/services/car-services/car-services.component';
+import { DetailingServiceComponent } from './app/components/services/detailing-service/detailing-service.component';
 
 const appRoute: Routes = [
   { path: 'PageNotFound', component: PageNotFoundComponent},
   { path: 'Home', component: HomeComponent },
   { path: 'Brands', component: BrandLibraryComponent },
   { path: 'CarForm', component: CarFormComponent },
+  { path: 'CarServices', component: CarServicesComponent },
+  { path: 'CarServices/DetailingService', component: DetailingServiceComponent },
   { path: 'Brands/Models/:brandName', component: ModelLibraryComponent },
   { path: 'Brands/Models/:brandName/Generations/:modelName', component: GenerationLibraryComponent },
   { path: 'Brands/Models/:brandName/Generations/:modelName/Engines/:generationName', component: EngineLibraryComponent },
